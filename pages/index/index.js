@@ -1,29 +1,38 @@
+var c = 1
+
 Page({
   data: {
     curIdx: null,
+    count:0,
+    source: 'https://github.com/guidesc/Petinkou/blob/master/audios/1.m4a?raw=true',
     listInfo: [
       {
-        title: '效果一',
         imgUrl: 'https://github.com/guidesc/Petinkou/blob/master/images/app1.gif?raw=true',
-        curUrl: 'https://github.com/guidesc/Petinkou/blob/master/images/app2.gif?raw=true',
+        curUrl: 'https://github.com/guidesc/Petinkou/blob/master/images/app2-2.gif?raw=true',
+        tstUrl: '../../images/blue-lowerleft.png'
+
       }
     ]
   },
   changeImg: function (e) {
+    
     this.setData({
-      curIdx: e.currentTarget.dataset.current
-    })
-    wx.pauseBackgroundAudio()
-    //  console.log(e)
-    //  console.log(this.data.curIdx) 
+      curIdx: e.currentTarget.dataset.current,
+      count: c,
+      source: 'https://github.com/guidesc/Petinkou/blob/master/audios/2.m4a?raw=true'
+    }),
+    c = c + 1
+
+
+    //wx.pauseBackgroundAudio()
+      console.log(e)
+      console.log(this.data.curIdx) 
+      console.log(this.data.count)
   }
+
 })
 
 const backgroundAudioManager = wx.getBackgroundAudioManager()
 
-backgroundAudioManager.title = '此时此刻'
-backgroundAudioManager.epname = '此时此刻'
-backgroundAudioManager.singer = '许巍'
-backgroundAudioManager.coverImgUrl = 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000'
-backgroundAudioManager.src = 'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E061FF02C31F716658E5C81F5594D561F2E88B854E81CAAB7806D5E4F103E55D33C16F3FAC506D1AB172DE8600B37E43FAD&fromtag=46' // 设置了 src 之后会自动播放
+backgroundAudioManager.src = 'https://github.com/guidesc/Petinkou/blob/master/audios/Swing%20Republic.m4a?raw=true' // 设置了 src 之后会自动播放
 
