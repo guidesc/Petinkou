@@ -3,5 +3,6 @@
 <view class="test-bg" wx:for="{{listInfo}}"  data-current="{{index}}" wx:key="this" bindtap="changeImg">
     <image hidden='{{count!==0}}' src="{{item.imgUrl}}" class="bg-image" mode="aspectFill"></image>
     <image hidden='{{count!==1}}' src="{{item.curUrl}}" class="bg-image" mode="aspectFill"></image>    
-    <image hidden='{{count!==2}}' src="{{item.tstUrl}}" class="bg-image" mode="aspectFill"></image>    
+    <image hidden='{{count!==2}}' src="{{item.finUrl}}" class="bg-image" mode="aspectFill"></image>    
+    
   </view>

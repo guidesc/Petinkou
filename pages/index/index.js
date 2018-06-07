@@ -10,7 +10,8 @@ Page({
       {
         imgUrl: 'https://github.com/guidesc/Petinkou/blob/master/images/app1.gif?raw=true',
         curUrl: 'https://github.com/guidesc/Petinkou/blob/master/images/app2.gif?raw=true',
-        tstUrl: 'https://github.com/guidesc/Petinkou/blob/master/images/app3.gif?raw=true'
+        tstUrl: 'https://github.com/guidesc/Petinkou/blob/master/images/app3.gif?raw=true',
+        finUrl: 'https://github.com/guidesc/Petinkou/blob/master/images/app4.gif?raw=true'
 
       }
     ]
