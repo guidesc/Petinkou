@@ -4,8 +4,8 @@ Page({
     listInfo: [
       {
         title: '效果一',
-        imgUrl: '../../images/app1.gif',
-        curUrl: '../../images/app2.gif',
+        imgUrl: 'https://github.com/guidesc/Petinkou/blob/master/images/app1.gif?raw=true',
+        curUrl: 'https://github.com/guidesc/Petinkou/blob/master/images/app2.gif?raw=true',
       }
     ]
   },
