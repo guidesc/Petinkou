@@ -1,0 +1,11 @@
+//对应的audio.wxml
+<view class="title text-center">
+  audio音频组件示例</view>
+<view class="text-center">
+  <audio id="audio" src="{{audio.src}}" loop="{{true}}" controls="{{true}}" poster="{{audio.poster}}" name="{{audio.name}}" author="{{audio.author}}" binderror="audioError" bindplay="audioPlay" bindeneded="playEnd" bindtimeupdate="timeUpdate"></audio>
+</view>
+<view class="row">
+  <button class="col" type="primary" size="mini" bindtap="play">播放</button>
+  <button class="col" type="primary" size="mini" bindtap="pause">暂停</button>
+  <button class="col" type="primary" size="mini" bindtap="goFast">快进</button>
+</view>
