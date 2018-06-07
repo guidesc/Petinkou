@@ -1,6 +1,6 @@
-var c = 0
+var c = 1
 var d = 1
-var source= 'https://github.com/guidesc/Petinkou/blob/master/audios/' + d + '.m4a?raw=true'
+var source= 'https://github.com/guidesc/Petinkou/blob/master/audios/' + d + '.mp3?raw=true'
 console.log(source)
 Page({
   data: {
@@ -22,7 +22,7 @@ Page({
       count: c}),
     c = c + 1
     d = d + 1
-    source = 'https://github.com/guidesc/Petinkou/blob/master/audios/' + d + '.m4a?raw=true'
+    source = 'https://github.com/guidesc/Petinkou/blob/master/audios/' + d + '.mp3?raw=true'
     
     console.log(source)
     backgroundAudioManager.src = source // 设置了 src 之后会自动播放
